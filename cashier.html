@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cashier App</title>
+  <meta name="description" content="Simple and fast cashier app for barcode product lookup." />
+  <style>
+    body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background:#0b1220; color:#e6edf3; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 28px 18px; }
+    .card { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.10); border-radius: 18px; padding: 20px; }
+    .top { display:flex; gap:18px; align-items:center; flex-wrap:wrap; }
+    .logo { width:90px; height:90px; border-radius: 20px; overflow:hidden; border:1px solid rgba(255,255,255,0.15); }
+    .logo img { width:100%; height:100%; object-fit:cover; }
+    h1 { margin: 0; font-size: 28px; }
+    .muted { color: rgba(230,237,243,0.75); margin: 6px 0 0; line-height:1.6; }
+    .btns { margin-top: 16px; }
+    .btn { display:inline-block; padding: 12px 18px; border-radius: 12px; text-decoration:none; font-weight:600; background:#2ea043; color:#081018; }
+    .hero { margin-top: 25px; border-radius: 18px; overflow:hidden; border:1px solid rgba(255,255,255,0.15); }
+    .hero img { width:100%; display:block; }
+    .section { margin-top: 24px; }
+    .footer { margin-top: 30px; font-size: 13px; color: rgba(230,237,243,0.65); text-align:center; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+
+      <div class="top">
+        <div class="logo">
+          <img src="https://raw.githubusercontent.com/Mur87tada/IraqiDevelopers/main/scan.jpg" alt="Cashier App Icon">
+        </div>
+
+        <div>
+          <h1>Cashier App</h1>
+          <p class="muted">
+            A simple and fast cashier application designed for small shops.
+            Scan barcodes, manage products, and update prices quickly.
+          </p>
+
+          <div class="btns">
+            <a class="btn" href="https://play.google.com/store/apps/details?id=com.murtada.cashier" target="_blank" rel="noopener">
+              Download on Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero">
+        <img src="https://raw.githubusercontent.com/Mur87tada/IraqiDevelopers/main/256c8df9-7782-4faf-8026-50758cce94e7-md.jpeg" alt="Cashier App Banner">
+      </div>
+
+      <div class="section">
+        <h2>Features</h2>
+        <p class="muted">
+          • Barcode scanning<br>
+          • Fast product search<br>
+          • Easy price editing<br>
+          • Clean, user-friendly UI
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Contact</h2>
+        <p class="muted">Email: iraqi87developer@gmail.com</p>
+      </div>
+
+      <div class="footer">
+        © <span id="year"></span> Cashier App — All rights reserved.
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
